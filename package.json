@@ -1,7 +1,11 @@
 {
   "name": "shirts",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Eugene Kotov cv page",
+=======
+  "description": "Fjord landing page",
+>>>>>>> 1734e0107ab37e2b8e24dd9c22d797f3d6998e70
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
