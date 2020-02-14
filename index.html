@@ -6,112 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./app/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,600&display=swap" rel="stylesheet">
+    
     <title></title>
 </head>
 <body>
-
-        <nav class="nav container">
-            <ul class="nav__list">
-                <a class="nav__item--active" href="index.html"><li>Главная </li> </a>
-                <a class="nav__item" href="about.html"><li>Обо мне </li> </a>
-                <a class="nav__item" href="works.html"><li>Работы </li> </a>
-                <a class="nav__item" href="contact.html"><li >Контакты </li> </a>
-            </ul>
-        </nav>
-    <div class="header-wrapper container">
-        <div class="header">
-                <div class="photo">
-                    <img src="app/css/img/photo_2019-06-16_23-03-13.jpg" alt="" srcset="">
+    <div class="header container">
+        <nav class="nav">
+            <a class="nav-button" src="" alt="" srcset=""><img src="app/css/img/icons8-menu.svg" alt="" srcset=""></a>
+            <input class="toggle" type="checkbox" checked>
+        <ul class="nav__list">
+            <li><a class="nav__item" href="#">Главная</a></li>
+            <li><a class="nav__item" href="#">Обо мне</a></li>
+            <li><a class="nav__item" href="#">Работы</a></li>
+           <li> <a class="nav__item" href="#">Контакты</a></li>
+        </ul>
+    </nav>
+        <div class="header-wrapper">
+                <div class="header-info">
+                    <div class="header-info__img">
+                        <img src="app/css/img/photo_2019-06-16_23-03-13.jpg" alt="" srcset="">
+                    </div>
+                    <div class="header-info__name">Евгений Котов</div>
+                    <div class="header-info__contact">
+                            <div class="contact__item ">
+                                <a href="mailto:mrkev2112x@gmail.com">
+                                    <img class="icon contact__icon" src="app/css/img/New_Logo_Gmail.svg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="contact__item ">  
+                                <a href="#"> 
+                                    <img class="icon contact__icon" src="app/css/img/Telegram_logo.svg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="contact__item ">  
+                                <a href="https://github.com/eugenekotovx"> 
+                                    <img class="icon contact__icon" src="app/css/img/github.svg" alt="" srcset="">
+                                </a>
+                            </div>
+                    </div>
                 </div>
                 <div class="header__description">
-                    Привет! Меня зовут Евгений Котов, я начинающий фронтенд-разработчик из Санкт-Петербурга, и на данный момент я нахожусь в поиске рабочего места, где я смогу расти и развиваться. На данный момент я рассматриваю стажировку или работу на вакансии верстальщика <span> <img class="header__icon" src="app/css/img/html-5.svg" alt="" srcset=""></span> <span> <img class="header__icon" src="app/css/img/css.svg" alt="" srcset=""></span>
+                    Привет! Я <strong> начинающий фронтенд-разработчик </strong>  из Санкт-Петербурга, и на данный момент я нахожусь в поиске рабочего места, где буду расти и развиваться! Я рассматриваю как<strong>стажировку, так и работу верстальщиком </strong> <span> <img class="header__icon" src="app/css/img/html-5.svg" alt="" srcset=""></span> <span> <img class="header__icon" src="app/css/img/css.svg" alt="" srcset=""></span>
                 </div> 
-        </div>
+            </div>
     </div>
  
-    <div class="container">
-        <div class="about">
-            <div class="about__skills">
-                    <div class="about__item">Итак, всё как всегда - 
+    <div class="about container">
+        <div class="about__title"> <strong> Обо мне: </strong> </div>
+        <div class="about__desc">Итак, всё как всегда - 
                          <span>
-                          <img class="icon" src="app/css/img/html-5.svg" alt="" srcset="">
+                          <img class="icon" src="app/css/img/html-5.svg" alt="" srcset=""> <strong>HTML</strong>
+                          
                         </span>
-                         для разметки, 
+                         использую для разметки, опираюсь на <strong> БЭМ </strong>
                         <span> 
-                            <img class="icon" src="app/css/img/css.svg" alt="" srcset="">
+                            <img class="icon" src="app/css/img/css.svg" alt="" srcset=""> <strong>CSS</strong>
                         </span>
-                         для верстки современного дизайна, предпочитаю использовать flex-box, для лучшей адаптивности макета, если необходимо - bootstrap.
+                         для <strong> верстки современного дизайна </strong>. Предпочитаю использовать <strong> flex-box </strong> для лучшей адаптивности макета, если необходимо - <strong> bootstrap </strong>. Для оптимизации рабочего процесса <strong> использую препроцессор </strong> <span><img class="icon" src="app/css/img/Sass_Logo_Color.svg" alt=""></span> <strong>SASS</strong>.
                         <span> 
-                            <br>     <img class="icon" src="app/css/img/js.svg" alt="" srcset="">
-                        </span> - на базовом уровне, но умею подключать плагины, писать небольшие скрипты для адаптивности, разбираться в чужом коде. 
+                            <br>     <img class="icon" src="app/css/img/js.svg" alt="" srcset=""> <strong>JavaScript</strong>
+                        </span> - <strong>на базовом уровне</strong>. Подключение плагинов, написание скриптов для интерактивности, умение разбираться в чужом коде. 
                     <br> С помощью
                          <span>
-                              <img class="icon" src="app/css/img/icons8-gulp-64.svg" alt="" srcset="">
-                        </span>оптимизирую и собираю проект, стараюсь относиться к этому этапу довольно серьезно. Мелочь, но если у Вас возникнет интерес, то оставил исходники проектов на гитхабе. 
-                        <br>  Если необходимо использовать webpack, то для него тоже есть необходимые базовые знания.
+                              <img class="icon" src="app/css/img/icons8-gulp-64.svg" alt="" srcset=""> <strong>GULP</strong>
+                        </span> <strong>оптимизирую и собираю проект</strong>, стараюсь относиться к этому этапу довольно серьезно. Мелочь, но если у Вас возникнет интерес, то оставил исходники проектов на гитхабе. 
+                        <br>  А так же
                         <span>
-                             <img class="icon" src="app/css/img/Webpack.svg" alt="" srcset="">
+                             <img class="icon" src="app/css/img/Webpack.svg" alt="" srcset=""> <strong>WEBPACK</strong>
                         </span>
-
-                        <br>    С большим интересом изучаю
+                            если он используется в проекте.
+                        <br>    С большим интересом <strong> изучаю</strong> 
                         <span> 
-                            <img class="icon" src="app/css/img/react.svg" alt="" srcset="">
-                        </span> но стараюсь сначала подтянуть знания по es6, и довести их до хорошего уровня.</div>
-            </div>
+                            <img class="icon" src="app/css/img/react.svg" alt="" srcset=""> <strong>REACT</strong>
+                        </span>
         </div>
+        <div class="about__desc">
+            Окей, ответственность, пунктуальность - это круто! Но кроме этого могу выделить другие качества:
+            <br> - Умение <strong> искать и правильно использовать информацию </strong>в рабочем процессе (умение гуглить тоже навык!) <br>
+            - Подходить к работе с максимальным упорством и <strong>делать максимум для решения задачи</strong> <br>
+            - Желание и <strong> стремление учиться и постоянно развиваться</strong> <br>
+            - <strong>Умение работать в команде </strong>
         </div>
     </div>
-</div>
+
 
 
 <main class="portfolio container">
     <div class="portfolio__title">
-        Мои работы
+      <strong>  Мои работы: </strong>
     </div>
-    <div class="portfolio__card ">
+    <div class="portfolio-card ">
 
-        <img class="portfolio__img " src="app/css/img/portfolio/y0Fumfd4NpA.jpg" alt="">
-
-        <div class="portfolio__desc ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error quis magni officia quia, cum fugiat exercitationem pariatur tempora, necessitatibus non, incidunt nobis soluta architecto consequuntur unde! Temporibus, delectus quis?</div>
-    </div>
-    <div class="portfolio__card">
-
-        <img class="portfolio__img " src="app/css/img/portfolio/hl1axR9K404.jpg" alt="">
-
-        <div class="portfolio__desc ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error quis magni officia quia, cum fugiat exercitationem pariatur tempora, necessitatibus non, incidunt nobis soluta architecto consequuntur unde! Temporibus, delectus quis?</div>
-    </div>
-    <div class="portfolio__card ">
-
-        <img class="portfolio__img " src="app/css/img/portfolio/4OYlZdCU1vE.jpg" alt="">
-
-        <div class="portfolio__desc ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error quis magni officia quia, cum fugiat exercitationem pariatur tempora, necessitatibus non, incidunt nobis soluta architecto consequuntur unde! Temporibus, delectus quis?
-            
+        <img class="portfolio-card__img " src="app/css/img/portfolio/y0Fumfd4NpA.jpg" alt="">
+        <div class="portfolio-card__group">
+            <div class="portfolio-card__desc ">ССЫЛКА НА ГИТХАБ</div>
+            <div class="portfolio-card__desc ">ССЫЛКА НА ПРОЕКТ</div>
         </div>
+        
+    </div>
+    <div class="portfolio-card">
+
+        <img class="portfolio-card__img " src="app/css/img/portfolio/hl1axR9K404.jpg" alt="">
+
+        <div class="portfolio-card__desc ">ССЫЛКА ГИТХАБ</div>
+    </div>
+    <div class="portfolio-card ">
+
+        <img class="portfolio-card__img " src="app/css/img/portfolio/4OYlZdCU1vE.jpg" alt="">
+
+        <div class="portfolio-card__desc ">ССЫЛКА ГИТХАБ</div>
     </div> 
 </main>
-<footer class="container">
+<footer class="footer container">
     
-    <div class="contacts">
-            <div class="contacts__header">
-                Для связи со мной:
+    <div class="contact">
+            <div class="contact__title"> <strong> Для связи со мной:</strong>
             </div>
-            <div class="contacts__item ">
+            <div class="contact__item ">
                 <span>
                     <img class="icon contact__icon" src="app/css/img/New_Logo_Gmail.svg" alt="" srcset="">
                 </span>
                 <div> mrkev2112x@gmail.com</div>
             </div>
-            <div class="contacts__item ">  
+            <div class="contact__item ">  
                 <span> 
                     <img class="icon contact__icon" src="app/css/img/Telegram_logo.svg" alt="" srcset=""> <img class="icon contact__icon" src="app/css/img/smiley.svg" alt="" srcset="">
                 </span>
                 <div> 89059273313</div>
             </div>
-    </div>
+        </div>
 </footer>
-
-
 
 </body>
 </html>
