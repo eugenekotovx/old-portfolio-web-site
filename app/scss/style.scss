@@ -34,13 +34,17 @@ $main-font: 'Oxygen', sans-serif;
 strong {
     background-color: $main-color;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     padding: 3px 10px;
     box-sizing: border-box;
     margin: 0 2px;
 }
 input {
     display: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .nav-button {
@@ -62,6 +66,7 @@ input {
 }
 
 .nav {
+    @extend .container;
     z-index: 100;
     &__list {
         display: flex;
@@ -83,6 +88,8 @@ input {
 
 .icon {
     width: 38px;
+    position: relative;
+    top: 8px;
 }
 
 
@@ -237,12 +244,9 @@ input {
     }
     &__item {
         display: flex;
-
         padding: 10px;
+        margin-right: 10px;
         width: 36px;
-        img {
-            width: 100%;
-        }
         &:hover {
             cursor: pointer;
             opacity: .7;
@@ -270,6 +274,7 @@ input {
     .header {
         &-info {
             flex-direction: column;
+            width: 100%;
             &__contact {
                 width: 100%;
                 display: flex;
@@ -285,12 +290,11 @@ input {
     input {
         display: block;
     }
-    .nav-button {
-        display: block;
-    }
     .nav {
+        padding: 0;
         position: absolute;
         width: 100%;
+        top: 80px;
         min-width: 320px;
         height: 300px;
         &__item {
@@ -301,12 +305,17 @@ input {
             flex-direction: column;
             background-color: white;
             position: fixed;
-            top: 40px;
+            top: 80px;
             width: 100%;
+            margin-top: 0;
+            padding: 0;
         }
     }
     .nav-button {
+        display: block;
         position: fixed;
+        top: 40px;
+        left: 20px;
         height: 40px;
         img {
             fill: $main-color;
@@ -315,10 +324,12 @@ input {
     }
 
     input {
+        left: 20px;
+        right: 20px;
         position: fixed;
-        left: 0;
         top: 40px;
-        width: 100%;
+        box-sizing: border-box;
+        width: 40px;
         z-index: 100;
         opacity: 0;
         cursor: pointer;
@@ -327,11 +338,12 @@ input {
     .toggle:checked ~ul {
         height: 0%;
         position: absolute;
+        top: 0;
     }
-    .nav ul {
+    .nav .nav__list {
+        position: fixed;
         padding-left: 0;
         padding-top: 0;
-        margin-top: 45px;
         list-style: none;
         overflow: hidden;
         text-align: right;
@@ -339,6 +351,9 @@ input {
         text-align: start;
         transition: all .4s ease-out;
         height: 90vh;
+        width: 100%;
+        box-sizing: border-box;
+        top: 80px;
         
     }
     .nav ul li a {
@@ -349,6 +364,7 @@ input {
         line-height: 1.5;
         margin: 0;
         margin-bottom: 5px;
+        margin-left: 20px;
     }
     nav ul li a:hover {
         background: #F32B1B;
