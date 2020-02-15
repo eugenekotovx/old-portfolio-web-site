@@ -13,7 +13,7 @@
 
 $main-font-size: 18px;
 $main-color: #41588c;
-$main-font: 'Oxygen', sans-serif;
+$main-font: 'Open Sans', sans-serif;
 
 
 @mixin main-text {
@@ -320,9 +320,6 @@ html {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
-    &__card {
-        background-color: $main-color;
-    }
     &__img {
         position: relative;
         width: 50%;
@@ -337,6 +334,17 @@ html {
             height: 100%;
             border-radius: 50px;
         }
+    }
+    &__circle {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: $main-color;
+        top: -15px;
+        z-index: -1;
+        left: -15px;
+        clip-path: circle(50% at 50% 50%);
+
     }
     &__group {
         position: absolute;
@@ -354,6 +362,7 @@ html {
         border-radius: 50px;
     }
     &__title {
+        margin-top: 40px;
         @include main-title;
         margin-bottom: 40px;
     }
@@ -364,6 +373,13 @@ html {
             cursor: pointer;
             background-color: #F32B1B;
             color: white;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .portfolio {
+        &__img {
+            width: 75%;
         }
     }
 }

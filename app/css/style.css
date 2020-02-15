@@ -74,7 +74,7 @@ html {
 }
 
 .nav__item {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #41588c;
   font-size: 26px;
   font-style: bold;
@@ -136,7 +136,7 @@ html {
 }
 
 .header-info__name {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 26px;
   color: white;
   background-color: #41588c;
@@ -175,7 +175,7 @@ html {
   width: 100%;
   line-height: 2;
   font-size: 18px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #41588c;
 }
 
@@ -212,7 +212,7 @@ html {
 
 .about__title {
   font-size: 26px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   margin-top: 125px;
   margin-bottom: 50px;
@@ -225,13 +225,13 @@ html {
 
 .about__skills {
   font-size: 18px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #41588c;
 }
 
 .about__desc {
   font-size: 18px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #41588c;
   margin-bottom: 20px;
   line-height: 2;
@@ -253,14 +253,14 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 18px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #41588c;
 }
 
 .contact__title {
   text-align: center;
   font-size: 26px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   margin-top: 100px;
 }
@@ -426,10 +426,6 @@ html {
   margin-bottom: 100px;
 }
 
-.portfolio__card {
-  background-color: #41588c;
-}
-
 .portfolio__img {
   position: relative;
   width: 50%;
@@ -448,6 +444,18 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50px;
+}
+
+.portfolio__circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #41588c;
+  top: -15px;
+  z-index: -1;
+  left: -15px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 .portfolio__group {
@@ -479,8 +487,9 @@ html {
 }
 
 .portfolio__title {
+  margin-top: 40px;
   font-size: 26px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -492,7 +501,7 @@ html {
 
 .portfolio__link {
   font-size: 26px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #41588c;
 }
@@ -506,6 +515,12 @@ html {
   cursor: pointer;
   background-color: #F32B1B;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .portfolio__img {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
