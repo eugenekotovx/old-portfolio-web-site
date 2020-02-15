@@ -57,6 +57,11 @@ html {
   outline: none;
 }
 
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url("css/fonts/Font Awesome5Free-Solid-900.otf");
+}
+
 .menu-button {
   display: none;
 }
