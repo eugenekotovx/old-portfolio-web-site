@@ -18,6 +18,10 @@ strong {
   margin: 0 2px;
 }
 
+.wrapper {
+  background-color: wheat;
+}
+
 input {
   display: none;
 }
@@ -62,10 +66,10 @@ html {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-top: 20px;
 }
 
@@ -74,6 +78,7 @@ html {
   color: #41588c;
   font-size: 26px;
   font-style: bold;
+  margin-left: 40px;
 }
 
 .nav__item:hover {
@@ -157,7 +162,7 @@ html {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 200px;
+  max-width: 150px;
   height: 100%;
 }
 
@@ -169,7 +174,7 @@ html {
 .header__description {
   width: 100%;
   line-height: 2;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Oxygen", sans-serif;
   color: #41588c;
 }
@@ -201,23 +206,6 @@ html {
   }
 }
 
-.skills {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .about {
   width: 100%;
 }
@@ -236,89 +224,17 @@ html {
 }
 
 .about__skills {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Oxygen", sans-serif;
   color: #41588c;
 }
 
 .about__desc {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Oxygen", sans-serif;
   color: #41588c;
   margin-bottom: 20px;
   line-height: 2;
-}
-
-.portfolio {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.portfolio-card {
-  height: 40%;
-  padding: 30px 40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border: 10px #41588c solid;
-  border-bottom: #41588c 5px solid;
-}
-
-.portfolio-card__img {
-  border-radius: 50px;
-  width: 40%;
-  margin-right: 70px;
-  -webkit-transition: -webkit-transform .5s ease-in;
-  transition: -webkit-transform .5s ease-in;
-  -o-transition: transform .5s ease-in;
-  transition: transform .5s ease-in;
-  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
-  position: relative;
-}
-
-.portfolio-card__img:hover {
-  cursor: pointer;
-}
-
-.portfolio-card__group {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.portfolio-card__desc {
-  font-size: 20px;
-  font-family: "Oxygen", sans-serif;
-  color: #41588c;
-  margin-left: 25px;
-}
-
-.portfolio__title {
-  font-size: 26px;
-  font-family: "Oxygen", sans-serif;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
-.portfolio__title strong {
-  background: #F32B1B;
-  border-radius: 0;
 }
 
 .contact {
@@ -336,7 +252,7 @@ html {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Oxygen", sans-serif;
   color: #41588c;
 }
@@ -359,7 +275,6 @@ html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
   margin-right: 10px;
   width: 36px;
 }
@@ -374,22 +289,6 @@ html {
 }
 
 @media (max-width: 768px) {
-  .portfolio-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .portfolio-card__desc {
-    margin-top: 20px;
-  }
-  .portfolio-card__img {
-    width: 100%;
-    margin: 0 auto;
-  }
   .header-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -444,6 +343,9 @@ html {
     width: 100%;
     margin-top: 0;
     padding: 0;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
   .nav-button {
     display: block;
@@ -508,6 +410,102 @@ html {
     -o-transition: background .1s;
     transition: background .1s;
   }
+}
+
+.portfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.portfolio__card {
+  background-color: #41588c;
+}
+
+.portfolio__img {
+  position: relative;
+  width: 50%;
+  margin: 25px auto;
+}
+
+.portfolio__img:hover div {
+  opacity: 1;
+  -webkit-transition: opacity .4s;
+  -o-transition: opacity .4s;
+  transition: opacity .4s;
+}
+
+.portfolio__img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.portfolio__group {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: white;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  opacity: 0;
+  border-radius: 50px;
+}
+
+.portfolio__title {
+  font-size: 26px;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio__title strong {
+  background: #F32B1B;
+  border-radius: 0;
+}
+
+.portfolio__link {
+  font-size: 26px;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+  color: #41588c;
+}
+
+.portfolio__link strong {
+  background: #F32B1B;
+  border-radius: 0;
+}
+
+.portfolio__link:hover {
+  cursor: pointer;
+  background-color: #F32B1B;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
