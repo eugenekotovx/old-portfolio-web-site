@@ -1,0 +1,171 @@
+// == reset == //
+
+@import 'reset.scss';
+
+// == fonts == //
+@font-face {
+    font-family: 'Big John';
+    src: url('fonts/bigjohn.otf');
+}
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('fonts/LucidaGrande.ttf');
+}
+@font-face {
+    font-family: 'Effra';
+    src: url('fonts/effra.ttf');
+}
+@font-face {
+    font-family: 'Block-condensed';
+    src: url('fonts/BlockCondensedNormal.ttf') format('truetype');
+}
+
+
+// button mixin //
+
+@mixin button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 61px;
+    border: 2px solid grey;
+    &:hover {
+        opacity: .85;
+        transition: .2s;
+        cursor: pointer;
+    }
+    &-text {
+        font-family: 'Block-condensed';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        color: #7A797A;
+        line-height: 40px;
+        letter-spacing: 6px;
+    }
+    &-arrow {
+        width: 60px;
+        height: 26px;
+      }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+a:hover {
+    opacity: .6;
+    transition: .2s;
+}
+
+// header section // 
+@import 'modules/header.scss';
+
+
+
+// slider gallery //
+@import 'modules/slider.scss';
+
+// vases section //
+@import 'modules/about.scss';
+
+
+// service section //
+@import 'modules/service.scss';
+
+// dropdown menu //
+
+.dropdown {
+    &__content {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        transition: all 10s ease;
+    }
+    &__item {
+        font-family: 'Big John';
+        color: #7A797A;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    &:hover > .dropdown__content{
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        transition: all 10s ease;
+    }
+}
+@media (max-width: 768px) {
+    .dropdown{
+        &__content {
+            height: 50%;
+            flex-direction: column;
+        }
+        &__item {
+            margin-top: 40px;
+        }
+    }
+}
+
+
+.network {
+    &__list{
+        height: 100%;
+        width: 22px;
+        z-index: 5;
+        padding-left: 40px;
+        padding-top: 50px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &__item {
+        padding-bottom: 21px;
+        img {
+            width: 20px;
+        }
+        &:hover {
+            opacity: 0.6;
+            transition: .4s;
+        }
+        &-action {
+            font-family: 'Big John';
+            color: white;
+            font-size: 14px;
+            letter-spacing: 2.8px;
+            transform: rotate(90deg);
+            white-space: nowrap;
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+    .network {
+        &__list {
+            padding: 0;
+            flex-direction: row;
+            width: 300px;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        &__item{
+            &-action {
+
+            transform: none;}
+        }
+    }
+}

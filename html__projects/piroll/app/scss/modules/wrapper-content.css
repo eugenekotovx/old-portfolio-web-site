@@ -1,0 +1,17 @@
+.head-wrapper {
+  background: url(/app/img/preview.png);
+  background-size: cover;
+  height: 673px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/*# sourceMappingURL=wrapper-content.css.map */

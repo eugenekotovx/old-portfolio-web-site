@@ -1,0 +1,24 @@
+.banner {
+  width: 479px;
+  margin-left: auto;
+  margin-right: 25px;
+  padding-top: 175px;
+}
+
+.banner__tittle {
+  font-weight: 600;
+  font-size: 38px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 48px;
+}
+
+.banner__text {
+  font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 5px;
+  line-height: 28px;
+  color: #787878;
+  font-family: 'Nunito Sans', sans-serif;
+}
+/*# sourceMappingURL=banner.css.map */

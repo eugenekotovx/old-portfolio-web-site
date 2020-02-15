@@ -1,0 +1,63 @@
+.header{
+    &__wrapper {
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(100% 100% at 52.01% 53.93%, rgba(255, 255, 255, 9e-06) 0%, rgba(0, 0, 0, 0.045) 100%), #F4F4F4;
+        margin: 0 auto;
+        padding: 0 120px;
+        box-sizing: border-box;
+    }
+    &__wrapper-inner {
+        height: 100%;
+        width: 100%;
+        background-image: url('img/GReeenco.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 70px 0;
+        box-sizing: border-box;
+    }
+    &__label {
+        font-family: 'Big John';
+        color: #7A797A;
+        font-size: 34px;
+    }
+    &__background-plant {
+        z-index: 100;
+        bottom: 0;
+        position: absolute;
+        right: 160px;
+        height:70%;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        position: relative;
+        cursor: pointer;
+        opacity: .7;
+        &:hover {
+            opacity: 1;
+            transition: .2s;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header__background-plant {
+        height: 40%;
+    }
+}
+@media (max-width: 576px) {
+    .header{
+        &__wrapper {
+            padding: 0 20px;
+        }
+        &__background-plant {
+            right: 0;
+        }
+    }
+}

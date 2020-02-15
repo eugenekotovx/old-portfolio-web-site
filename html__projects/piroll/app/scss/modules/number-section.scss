@@ -1,0 +1,61 @@
+/* number */
+
+.number {
+    background-color: #80A0F4;
+    &__inner {
+        padding: 50px 0;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 69px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &-text {
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            padding-left: 28px;
+            line-height: 30px;
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .number__wrapper{
+            padding: 50px 50px;
+        }
+}
+@media (max-width: 768px) {
+    .number__wrapper {
+
+            padding: 0;
+
+    }
+    .number{
+        &__item {
+            flex-direction: column;
+            margin-left: 20px;
+            &-text {
+                line-height: 20px;
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+        
+    }
+}
+
+

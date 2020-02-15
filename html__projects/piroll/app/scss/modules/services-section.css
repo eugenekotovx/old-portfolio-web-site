@@ -1,0 +1,61 @@
+/* services section */
+.services {
+  background-color: #F5F5F5;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.services__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services__item {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 60px;
+}
+
+i {
+  font-size: 48px;
+  font-family: "Pe";
+  color: #656565;
+  line-height: 0.625;
+  margin: 0 auto;
+}
+
+.services__item--name {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 30px;
+  color: #191919;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services__item--description {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #787878;
+  text-align: center;
+  line-height: 24px;
+}
+/*# sourceMappingURL=services-section.css.map */

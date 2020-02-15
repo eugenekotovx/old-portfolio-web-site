@@ -1,0 +1,51 @@
+/* number */
+.number {
+  background-color: #10c9c3;
+}
+
+.number__wrapper {
+  padding: 100px 100px 100px 100px;
+}
+
+.number__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.number__item-text {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding-left: 28px;
+  line-height: 30px;
+}
+
+.number__item-text > span {
+  font-size: 12px;
+}
+
+.number__image {
+  padding-left: 69px;
+}
+/*# sourceMappingURL=number-section.css.map */

@@ -1,0 +1,97 @@
+.skill {
+  background-color: #f8f9f9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.skill__wrapper {
+  width: 50%;
+  margin-top: 139px;
+  margin-bottom: 165px;
+}
+
+.skill__value {
+  margin-right: 0;
+  margin-left: auto;
+  width: 100%;
+}
+
+.skill__value-title {
+  color: #171717;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 84px;
+}
+
+.skill__value-item_name {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.skill__value-item_bar {
+  padding-right: 85px;
+  width: 100%;
+  height: 3px;
+  background-color: #d8d8d8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.skill__bar-UI {
+  background-color: #10c9c3;
+  width: 75%;
+  height: 100%;
+}
+
+.skill__bar-web {
+  background-color: #10c9c3;
+  width: 90%;
+  height: 100%;
+}
+
+.skill__bar-marketing {
+  background-color: #10c9c3;
+  width: 60%;
+  height: 100%;
+}
+
+.skill__img {
+  width: 50%;
+  margin-right: 0;
+}
+
+.skill__img > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .skill__img {
+    display: none;
+  }
+  .skill__value-title {
+    line-height: normal;
+  }
+  .skill__wrapper {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
+/*# sourceMappingURL=skill-section.css.map */

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* о процессе */
+.process__wrapper {
+  padding-top: 100px;
+}
+
+.process__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.process__text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: #787878;
+  text-align: center;
+  line-height: 24px;
+  padding-bottom: 60px;
+}
+
+.process__video {
+  padding-bottom: 100px;
+}
+
+/*# sourceMappingURL=process-section.css.map */

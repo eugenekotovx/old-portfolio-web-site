@@ -1,0 +1,82 @@
+.header__wrapper {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(100% 100% at 52.01% 53.93%, rgba(255, 255, 255, 9e-06) 0%, rgba(0, 0, 0, 0.045) 100%), #F4F4F4;
+  margin: 0 auto;
+  padding: 0 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__wrapper-inner {
+  height: 100%;
+  width: 100%;
+  background-image: url("img/GReeenco.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__label {
+  font-family: 'Big John';
+  color: #7A797A;
+  font-size: 34px;
+}
+
+.header__background-plant {
+  z-index: 100;
+  bottom: 0;
+  position: absolute;
+  right: 160px;
+  height: 70%;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.menu-item:hover {
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media (max-width: 991px) {
+  .header__background-plant {
+    height: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__wrapper {
+    padding: 0 20px;
+  }
+  .header__background-plant {
+    right: 0;
+  }
+}
+/*# sourceMappingURL=header.css.map */

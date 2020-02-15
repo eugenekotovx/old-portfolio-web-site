@@ -1,0 +1,96 @@
+/*footer*/
+footer {
+    background: #141414;
+}
+.footer {
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__inc {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0.18px;
+        line-height: 30px;
+    }
+    &__label {
+        span {
+            font-family: 'Nunito Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.075px;
+            color: #BCBCBC;            
+        }
+    }
+
+    &__nav{
+        &-list {
+            display: flex;
+            flex-direction: column;
+                &:first-child {
+                margin-right: 15px;
+                }
+                &-item {
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.075px;
+                    color: #BCBCBC;
+                    &:hover {
+                        opacity: .7;
+                        transition: .2s;
+                    }
+                }
+            }
+            &-group {
+                display: flex;
+                flex-direction: row;
+                width: 167px;
+                justify-content: space-between;
+            }
+        }
+        &__networks {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 786px) {
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__nav-list {
+        margin-top: 40px;
+    }
+    .footer {
+        &__container {
+            flex-direction: column;
+        }
+        &__nav-list {
+            margin-top: 40px;
+        }
+        &__label {
+            margin-bottom: 40px;
+        }
+    }
+}

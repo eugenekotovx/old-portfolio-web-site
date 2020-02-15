@@ -1,0 +1,131 @@
+
+.menu-button {
+    display: none;
+
+    &--active {
+        display: none;
+        position: relative;
+    }
+    &--active::before {
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        content: "\f00d";
+        font-weight: 900;
+        color: black;
+        font-size: 26px;
+    }
+    &::before {
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        content: "\f0c9";
+        font-weight: 900;
+        color: black;
+        font-size: 28px;
+     }
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    &-bar {
+        display: flex;
+        align-self: center;
+        &__item {
+            margin-left: 40px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 24px;
+            color: black;
+            &:first-child {
+                display: none;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+.nav-bar__item:hover, .nav__logo:hover {
+    opacity: .7;
+    transition: .2s;
+}
+
+@media (max-width: 768px) {
+    .nav-bar__ {
+        display: none;
+        &:last-child {
+            display: block;
+        }
+    }
+}
+@media (max-width:767px) {
+    .nav__logo {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .nav-bar {
+        margin-left: 0;
+        margin-right: auto;
+        &__item:not(:first-child) {
+            opacity: 0;
+        }
+        &__item:first-child {
+            display: block;
+        }
+        &__item {
+            margin-left: 0;
+        }
+    }
+    .nav-bar.responsive {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition:all .8s linear;
+        height: 90vh;
+        border-bottom: black 6px solid;
+    }
+
+
+    .nav-bar.responsive .nav-bar__item:not(:first-child) {
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-right: auto;
+        color: black;
+        opacity: 1;
+        font-size: 22px;
+        transition: opacity .9s linear;
+        
+    }
+    .nav-bar.responsive .nav-bar__item {
+        &:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+        &:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+        &:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+        &:nth-child(5) {
+            transition-delay: 0.5s;
+        }
+        &:nth-child(6) {
+            transition-delay: 0.6s;
+        }
+
+    }
+    .nav-bar.responsive .nav-bar__item > a, span::before {
+        color: black;
+    }
+}
+

@@ -1,0 +1,118 @@
+.gallery__wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.gallery {
+  background: #10c9c3;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.gallery__image {
+  display: none;
+  position: relative;
+  width: 25%;
+}
+
+.gallery__image-card {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__image-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__sub-item {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  background: black;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.gallery__sub-item:hover {
+  opacity: .8;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+  cursor: pointer;
+}
+
+.gallery__sub-item img {
+  margin: 0 auto;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .gallery {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gallery__image {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    width: 50%;
+  }
+}
+
+.load-more {
+  height: 100px;
+  background: #10c9c3;
+}
+
+.load-more__button {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  border: none;
+  background: #10c9c3;
+}
+
+.load-more__button:hover {
+  cursor: pointer;
+  background-color: #787878;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.load-more__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+/*# sourceMappingURL=gallery.css.map */
