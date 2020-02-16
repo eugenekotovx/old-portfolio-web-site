@@ -50,7 +50,7 @@ table {
 
 @font-face {
   font-family: 'Big John';
-  src: url("fonts/bigjohn.otf") format("otf");
+  src: url("fonts/BigJohn.otf") format("opentype");
 }
 
 @font-face {
@@ -60,7 +60,7 @@ table {
 
 @font-face {
   font-family: 'Effra';
-  src: url("fonts/effra.ttf") format("truetype");
+  src: url("fonts/Effra.ttf") format("truetype");
 }
 
 @font-face {
@@ -145,13 +145,13 @@ a:hover {
           justify-content: space-between;
 }
 
-.menu-item {
+.menu__item {
   position: relative;
   cursor: pointer;
   opacity: .7;
 }
 
-.menu-item:hover {
+.menu__item:hover {
   opacity: 1;
   -webkit-transition: .2s;
   -o-transition: .2s;
@@ -173,13 +173,13 @@ a:hover {
   }
 }
 
-.gallery__wrapper-outer {
+.gallery__outer {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.gallery__wrapper-outer::before {
+.gallery__outer::before {
   content: '';
   z-index: -1;
   position: absolute;
@@ -190,7 +190,7 @@ a:hover {
   bottom: 20%;
 }
 
-.gallery__wrapper-inner {
+.gallery__inner {
   padding-top: 100px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -322,10 +322,10 @@ a:hover {
   .slider-card__text {
     margin-left: 0;
   }
-  .gallery__wrapper-outer::before {
+  .gallery__outer::before {
     bottom: 0;
   }
-  .gallery__wrapper-inner {
+  .gallery__inner {
     padding-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -544,7 +544,7 @@ a:hover {
   background-color: #4A4A4A;
 }
 
-.service-wrapper {
+.service__wrapper {
   width: 100%;
   position: relative;
   height: 100vh;
