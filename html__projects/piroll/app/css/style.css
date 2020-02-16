@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url("fonts/FontAwesome5Free-Solid-900.otf") format("otf");
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,11 +60,6 @@ html {
 
 * {
   outline: none;
-}
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  src: url("css/fonts/Font Awesome5Free-Solid-900.otf");
 }
 
 .menu-button {
@@ -1265,9 +1265,4 @@ a {
 .overlay.active {
   opacity: 1;
   visibility: visible;
-}
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  src: url("fonts/FontAwesome5Free-Solid-900.otf") format("otf");
 }
