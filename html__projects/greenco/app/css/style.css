@@ -715,7 +715,7 @@ a:hover {
 }
 
 @media (max-width: 991px) {
-  .service-wrapper {
+  .service__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -739,7 +739,7 @@ a:hover {
 }
 
 @media (max-width: 576px) {
-  .service-wrapper {
+  .service__wrapper {
     padding: 25px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
