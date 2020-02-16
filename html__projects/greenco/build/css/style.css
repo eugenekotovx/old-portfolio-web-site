@@ -50,17 +50,17 @@ table {
 
 @font-face {
   font-family: 'Big John';
-  src: url("fonts/bigjohn.otf");
+  src: url("fonts/bigjohn.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Lucida Grande';
-  src: url("fonts/LucidaGrande.ttf");
+  src: url("fonts/LucidaGrande.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Effra';
-  src: url("fonts/effra.ttf");
+  src: url("fonts/effra.ttf") format("truetype");
 }
 
 @font-face {
