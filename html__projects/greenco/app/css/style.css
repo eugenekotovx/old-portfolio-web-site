@@ -773,7 +773,6 @@ a:hover {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   visibility: hidden;
-  opacity: 0;
   display: none;
   -webkit-transition: all 10s ease;
   -o-transition: all 10s ease;
@@ -781,15 +780,20 @@ a:hover {
 }
 
 .dropdown__item {
+  position: relative;
+  top: 40px;
   font-family: 'Big John';
   color: #7A797A;
   font-size: 20px;
   margin-top: 25px;
+  opacity: 0;
+  -webkit-transition: all 10s ease;
+  -o-transition: all 10s ease;
+  transition: all 10s ease;
 }
 
 .dropdown:hover > .dropdown__content {
   visibility: visible;
-  opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -804,6 +808,43 @@ a:hover {
   -webkit-transition: all 10s ease;
   -o-transition: all 10s ease;
   transition: all 10s ease;
+}
+
+.dropdown:hover > .dropdown__content > li > .dropdown__item {
+  opacity: .7;
+  -webkit-transition: all 10s linear;
+  -o-transition: all 10s linear;
+  transition: all 10s linear;
+}
+
+.dropdown:hover > .dropdown__content > li > .dropdown__item:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.dropdown:hover > .dropdown__content > li > .dropdown__item:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.dropdown:hover > .dropdown__content > li > .dropdown__item:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.dropdown:hover > .dropdown__content > li > .dropdown__item:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.dropdown:hover > .dropdown__content > li > .dropdown__item:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+       -o-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 @media (max-width: 768px) {
