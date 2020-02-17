@@ -291,14 +291,18 @@ html {
     display: block;
   }
   .menu {
-    margin-left: auto;
-    margin-right: 0;
+    margin: 0 auto;
+    margin-right: 20px;
   }
   .menu__item:not(:first-child) {
     display: none;
   }
   .menu.responsive {
     position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     margin-left: 0;
     width: 100%;
     display: -webkit-box;
@@ -314,10 +318,10 @@ html {
         -ms-flex-pack: distribute;
             justify-content: space-around;
     background: #fff;
-    height: 70vh;
+    height: 100vh;
   }
   .menu.responsive .menu__item {
-    margin: 15x auto;
+    margin: 15px auto;
     color: black;
     display: block;
     font-size: 22px;

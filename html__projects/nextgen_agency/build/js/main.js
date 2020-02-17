@@ -4,12 +4,10 @@
       x.className += " responsive";
       document.querySelector('.logo').style.display = 'none';
       document.querySelector('.hamburger-button').className +="--active";
-      document.querySelector('.header').style.padding="0"
     } else {
       x.className = "menu";
       document.querySelector('.logo').style.display = 'block';
       document.querySelector('.hamburger-button--active').className = "hamburger-button";
-      document.querySelector('.header').style.padding="20px"
     }
   }
   
@@ -44,4 +42,3 @@ $(window).on('load resize', function(e){
       }
     }
   }).trigger('load resize');
-
