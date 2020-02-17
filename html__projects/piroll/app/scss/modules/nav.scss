@@ -78,6 +78,7 @@
         margin-right: auto;
         &__item:not(:first-child) {
             opacity: 0;
+            visibility: hidden;
         }
         &__item:first-child {
             display: block;
@@ -107,6 +108,7 @@
         margin-top: 30px;
         margin-right: auto;
         color: black;
+        visibility: visible;
         opacity: 1;
         font-size: 22px;
         transition: opacity .9s linear;
