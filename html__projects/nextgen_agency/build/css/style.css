@@ -147,7 +147,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/css/img/bg2.jpeg");
+  background: url("css/img/bg2.jpeg");
   background-size: cover;
   background-position: top;
   display: -webkit-box;
@@ -251,7 +251,7 @@ html {
 
 @font-face {
   font-family: "Font Awesome 5 Free";
-  src: url("/css/fonts/Font Awesome5Free-Solid-900.otf");
+  src: url("css/fonts/Font Awesome5Free-Solid-900.otf");
 }
 
 .hamburger-button {
@@ -649,7 +649,7 @@ html {
 .banner__background-image {
   content: '';
   position: absolute;
-  background: url("/css/img/bitmap.png");
+  background: url("css/img/Bitmap.png");
   background-size: cover;
   top: 0;
   bottom: 210px;
@@ -1130,20 +1130,20 @@ html {
 }
 
 .submenu__item-service {
-  background: url("/css/img/submenu1.png");
+  background: url("css/img/submenu1.png");
 }
 
 .submenu__item-about {
-  background: url("/css/img/submenu2.png");
+  background: url("css/img/submenu2.png");
 }
 
 .submenu__item-service::before {
-  background: url("/css/img/submenu1.png");
+  background: url("css/img/submenu1.png");
   background-color: #31475E;
 }
 
 .submenu__item-about::before {
-  background: url("/css/img/submenu2.png");
+  background: url("css/img/submenu2.png");
   background-color: #31475E;
 }
 
