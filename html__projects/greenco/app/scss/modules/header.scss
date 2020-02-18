@@ -36,7 +36,7 @@
 .menu {
     display: flex;
     justify-content: space-between;
-    &__item {
+    &__item:last-child {
         position: relative;
         cursor: pointer;
         opacity: .7;
@@ -46,6 +46,95 @@
         }
     }
 }
+
+// dropdown menu //
+a {
+    
+      color: #7a797a;
+}
+.dropdown__menu {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    pointer-events: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .dropdown__menu:hover {
+    pointer-events: all;
+  }
+  .menu__item:first-child {
+    pointer-events: all;
+  }
+  
+  .dropdown__item {
+      position: relative;
+      margin-left: 30px;
+      top: 10px;
+      opacity: 0;
+      transition: opacity 0.5s ease, top 0.5s;
+      font-family: 'Big John';
+      color: #7a797a;
+      font-size: 24px;
+      &:hover > a {
+          
+        opacity: 1;
+      }
+  }
+  .label {
+      display: inline-block;
+      cursor: pointer;
+      pointer-events: all;
+  }
+  .dropdown__menu:hover .dropdown__item {
+      opacity: .5;
+      top: 0px;
+  }
+  .dropdown__item:nth-child(1) {
+    transition-delay: 0.45s;
+  }
+  .dropdown__item:nth-child(2) {
+    transition-delay: 0.4s;
+  }
+  .dropdown__item:nth-child(3) {
+    transition-delay: 0.35s;
+  }
+  .dropdown__item:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  .dropdown__item:nth-child(5) {
+      transition-delay: 0.25s;
+    }
+  
+  .dropdown__menu:hover .dropdown__item:nth-child(1) {
+    transition-delay: 0.25s;
+  }
+  .dropdown__menu:hover .dropdown__item:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .dropdown__menu:hover .dropdown__item:nth-child(3) {
+    transition-delay: 0.35s;
+  }
+  .dropdown__menu:hover .dropdown__item:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .dropdown__menu:hover .dropdown__item:nth-child(5) {
+      transition-delay: 0.45s;
+    }
+  
+  
+  @media (max-width: 768px) {
+      .dropdown__menu {
+          flex-direction: column;
+      }
+      .dropdown__item {
+          margin-top: 20px;
+      }
+  }
+
+
 @media (max-width: 991px) {
     .header__background-plant {
         height: 40%;
