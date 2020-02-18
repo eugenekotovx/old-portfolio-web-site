@@ -649,7 +649,7 @@ html {
 .banner__background-image {
   content: '';
   position: absolute;
-  background: url("img/Bitmap.png");
+  background: url("img/bitmap.png");
   background-size: cover;
   top: 0;
   bottom: 210px;
