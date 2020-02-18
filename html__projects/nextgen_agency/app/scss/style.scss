@@ -114,7 +114,7 @@ $main-line-height: 32px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("css/img/bg2.jpeg");
+    background: url("img/bg2.jpeg");
     background-size: cover;
     background-position: top;
     display: flex;
@@ -184,7 +184,7 @@ $main-line-height: 32px;
 
 @font-face {
     font-family:"Font Awesome 5 Free" ;
-    src: url("css/fonts/Font\ Awesome5Free-Solid-900.otf");
+    src: url("fonts/Font\ Awesome5Free-Solid-900.otf");
 }
 .hamburger {
     &-button {
@@ -495,7 +495,7 @@ $main-line-height: 32px;
     &__background-image {
         content: '';
         position: absolute;
-        background: url("css/img/Bitmap.png");
+        background: url("img/Bitmap.png");
         background-size: cover;
         top: 0;
         bottom: 210px;
@@ -832,17 +832,17 @@ $main-line-height: 32px;
         z-index: -1;
     }
     &__item-service {
-        background: url("css/img/submenu1.png");
+        background: url("img/submenu1.png");
     }
     &__item-about {
-        background: url("css/img/submenu2.png");
+        background: url("img/submenu2.png");
     }
     &__item-service::before {
-        background: url("css/img/submenu1.png");
+        background: url("img/submenu1.png");
         background-color: #31475E;
     }
     &__item-about::before {
-        background: url("css/img/submenu2.png");
+        background: url("img/submenu2.png");
         background-color: #31475E;
     }
 
@@ -968,7 +968,7 @@ $main-line-height: 32px;
         }
         &__subnav {
             margin: 0 auto;
-            padding-right: 50%;
+            padding-right: 0;
             margin-bottom: 40px;
         }
     }
