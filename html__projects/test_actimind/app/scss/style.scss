@@ -1,0 +1,58 @@
+// reset //
+
+@import '../css/vendor/reset.css';
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+// container settings //
+
+.container {
+    padding: 0 calc(50% - 660px);
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:992px) {
+    .container {
+    padding: 0 30px;
+}}
+@media (max-width: 768px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+// @ vars @ //
+
+$main-color: #9C69E2;
+$text-color:#4B5D68;
+$strong-color: #212353;
+
+@mixin link-hover {
+    color: $main-color;
+    transition: .2s;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+// modules //
+
+@import 'modules/nav.scss';
+
+@import 'modules/features.scss';
+
+@import 'modules/footer.scss'

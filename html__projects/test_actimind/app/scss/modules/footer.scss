@@ -1,0 +1,105 @@
+.footer {
+    background-color: $main-color;
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0;
+    }
+    &__form {
+        display: flex;
+        flex-direction: row;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+    }
+    &__link {
+        margin-left: 54px;
+    }
+    &__link a {
+        white-space: nowrap;
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 250%;
+    }
+    &__input {
+        width: 419px;
+        font-size: 16px;
+        line-height: 28px;
+        color: #A9A0B6;
+        padding: 10px 0 10px 15px;
+    }
+    &__group {
+        display: flex;
+        flex-direction: row;
+    }
+    &__button {
+        background: #EEAA12;
+        border-radius: 50px;
+        padding: 11px 28px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+        margin-left: 33px;
+        &:hover {
+            background: #FFBE2D;
+            transition: .2s;
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .footer {
+        &__list {
+            flex-direction: row;
+            
+        align-items: center;
+        }
+
+        &__group {
+            flex-direction: column;
+        }
+        &__link {
+            margin-left: 71px;
+        }
+        &__input {
+            width: 247px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        &__nav {
+            flex-wrap: wrap;
+        }
+        &__group {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .footer {
+    &__nav {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    &__form {
+        margin-top: 34px;
+        flex-direction: column;
+    }
+    &__list {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__button {
+        margin-top: 22px;
+    }
+}}
