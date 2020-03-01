@@ -19,10 +19,11 @@ button {
     box-sizing: border-box;
 }
 
-@media screen and (max-width:992px) {
+@media (max-width:1200px) {
     .container {
     padding: 0 30px;
-}}
+    }
+}
 @media (max-width: 768px) {
     .container {
         padding: 0 24px;

@@ -8,8 +8,6 @@
     &__wrapper {
         text-align: center;
         width: 100%;
-        padding-right: 60px;
-        padding-left: 60px;
         box-sizing: border-box;
     }
     &__title {
@@ -21,6 +19,8 @@
     }
     &__subtitle {
         font-size: 23px;
+        
+        line-height: 160%;
         color: $text-color;
         margin-top: 37px;
         margin-bottom: 56px;
@@ -28,7 +28,8 @@
     &__slider {
         position: relative;
         display: block;
-        width: 100%;
+        width: 1200px;
+        margin: 0 auto;
         background: #FFC84D;
         border-radius: 50px;
         box-sizing: border-box;
@@ -69,7 +70,7 @@
         z-index: -1;
         max-width: 390px;
         max-height: 358px;
-        margin-left: auto;
+        margin: 0 auto;
         
     }
     &__title {
@@ -94,6 +95,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        white-space: nowrap;
         &:hover {
             @include link-hover;
         }
@@ -115,39 +117,59 @@
         left: 130px;
     }
 }
-
+@media (max-width: 1200px) {
+    .features__slider {
+        max-width: 682px;
+        min-width: 320px;
+        width: 100%;
+        height: auto;
+    }
+}
 
 @media (max-width: 992px) {
     .features__wrapper {
-        padding: 0 13px;
-    }
-}
-@media (max-width: 768px) {
-    .features__slider {
-        padding-right: 0;
-    }
-    .features__wrapper {
         padding: 0;
     }
+    .features__slider {
+        max-width: 682px ;
+        margin: 0 auto;
+    }
 }
 
-
-@media (max-width: 321px) {
-    .features {
-        &__status {
-            left: 33px;
-        }
-        &__card {
-            z-index: -1;
+@media (max-width: 767px) {
+    .features{
+        &__subtitle {
+            margin-left: 60px;
+            margin-right: 60px;
         }
         &__slider {
-            padding-right: 0;
-        }
-        &__wrapper {
-            padding: 0;
+            max-width: 420px;
         }
     }
-    .card {
+     .card {
+        margin: 10px;
+        margin-top: 28px;
+        margin-bottom: 90px;
+        &__number {
+            display: none;
+        }
+        &__text {
+            padding: 41px 30px;
+            width: 280px;
+        }
+    }
+}
+@media (max-width: 574px) {
+    .features {
+        &__slider {
+            max-width: 320px;
+        }
+        &__subtitle {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+     .card {
         margin: 20px;
         margin-top: 28px;
         margin-bottom: 90px;
@@ -160,4 +182,27 @@
             margin-left: 20px;
         }
     }
+}
+
+
+@media (max-width: 321px) {
+    .features {
+        &__card {
+            z-index: -1;
+        }
+        &__slider {
+            padding-right: 0;
+            width: 100%;
+            border-radius: 0;
+        }
+        &__wrapper {
+            padding: 0;
+        }
+    }
+    .card {
+        &__status {
+            left: 53px;
+        }
+    }
+
 }

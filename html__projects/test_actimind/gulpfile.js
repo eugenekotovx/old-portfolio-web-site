@@ -41,7 +41,7 @@ gulp.task(fonts)
 // js dev //
 
 function scripts () {
-return gulp.src(['app/js/libs/*.js'])
+return gulp.src(['app/js/lib/*.js'])
     .pipe(concat('main.js'))
     .pipe(gulp.dest(['app/js']))
 }
@@ -95,7 +95,7 @@ gulp.task(gulpSass)
 function imgmin() {
 return gulp.src(['app/img/*'])
     .pipe(imagemin())
-    .pipe(gulp.dest(['buildimg']))
+    .pipe(gulp.dest(['build/img']))
 }
 
 exports.imgmin = imgmin;
