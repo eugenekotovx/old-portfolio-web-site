@@ -4,7 +4,7 @@
 }
 
 strong {
-  background-color: #41588c;
+  background-color: #356EC2;
   color: white;
   padding: 2px 5px;
   -webkit-box-sizing: border-box;
@@ -40,6 +40,7 @@ strong {
 }
 
 .header {
+  margin: 0;
   height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,10 +69,6 @@ strong {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__info {
@@ -100,7 +97,7 @@ strong {
   font-family: "IBM Plex Mono", monospace;
   font-size: 22px;
   color: white;
-  background-color: #41588c;
+  background-color: #356EC2;
   margin-top: 10px;
 }
 
@@ -131,8 +128,8 @@ strong {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 200px;
-  height: 200px;
+  max-width: 135px;
+  height: 135px;
 }
 
 .header__img img {
@@ -193,7 +190,7 @@ strong {
 }
 
 .about__title strong {
-  background: #41588c;
+  background: #356EC2;
   border-radius: 0;
 }
 
@@ -259,7 +256,7 @@ strong {
 }
 
 .portfolio__title strong {
-  background: #41588c;
+  background: #356EC2;
   border-radius: 0;
 }
 
@@ -289,7 +286,7 @@ strong {
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: #41588c;
+  background-color: #356EC2;
   top: -15px;
   z-index: -1;
   left: -15px;
@@ -335,13 +332,13 @@ strong {
 }
 
 .portfolio__link strong {
-  background: #41588c;
+  background: #356EC2;
   border-radius: 0;
 }
 
 .portfolio__link:hover {
   cursor: pointer;
-  background-color: #41588c;
+  background-color: #356EC2;
   color: white;
 }
 
