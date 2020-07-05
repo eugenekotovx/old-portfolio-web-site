@@ -11,3 +11,11 @@ console.log('priem')
             console.log('done')
         }
     });
+
+    $(document).ready(function(){
+  $('.about__slider').slick({
+    appendArrows: $('.controls'),
+    prevArrow: '<button type="button" class="ctrl-left"></button>',
+    nextArrow: '<button type="button" class="ctrl-right"></i></button>'
+        });
+    });
