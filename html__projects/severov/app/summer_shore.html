@@ -19,7 +19,7 @@
         <a class="logo__link" href="index.html" id="text">VITALY SEVEROV</a>
         <ul class="nav menu">
             <li class="nav__item submenu is-active">
-                  <a class="menu-link ">series</a>
+                  <a class="menu-link selected">series</a>
                       <ul class="nav__submenu is-visible selected">
                            <li class="nav__link"> <a href="summer_shore.html" class="menu-link">Summer Shore</a> </li>
                            
@@ -40,7 +40,7 @@
             </li>
    </ul>
     </div>
-    <div class="gallery__wrapper">
+    <div class="gallery__wrapper" id="a">
         <p class="gallery__desc">
         <span></span>    «Summer Shore is geographically name of coastal area of White Sea,
 Onegian Peninsula, North of Arkhangelsk region. <br>
@@ -59,7 +59,7 @@ time unlinearly»
         </p>
         <div class="gallery__item">
             <div class="img-wrapper">
-            <img class="img lazy" data-src="./css/img/1.JPG" alt="">
+            <img class="img lazy" data-src="./css/img/1.jpg" alt="">
         </div>
             <figcaption class="gallery__item-desc">fisherman check the net, Letnij Navolok Village, 
                 Summer 2018
@@ -75,7 +75,7 @@ time unlinearly»
         </div>
         <div class="gallery__item">
             <div class="img-wrapper">
-            <img class="img lazy" data-src="./css/img/3.JPG" alt="">
+            <img class="img lazy" data-src="./css/img/3.jpg" alt="">
         </div>
             <figcaption class="gallery__item-desc">old shipwreck, Letnij Navolok Village,  Summer
                 2018
@@ -83,19 +83,19 @@ time unlinearly»
         </div>
         <div class="gallery__item">
         <div class="img-wrapper">
-            <img class="img lazy" data-src="./css/img/4.JPG" alt="">
+            <img class="img lazy" data-src="./css/img/4.jpg" alt="">
         </div>
             <figcaption class="gallery__item-desc">eclipse, Yagri Island, Winter 2017</figcaption>
         </div>
         <div class="gallery__item">
             <div class="img-wrapper">
-                <img class="img lazy" data-src="./css/img/5.JPG" alt="">
+                <img class="img lazy" data-src="./css/img/5.jpg" alt="">
             </div>
                 <figcaption class="gallery__item-desc">eclipse, Yagri Island, Winter 2017</figcaption>
         </div>
         <div class="gallery__item">
             <div class="img-wrapper">
-                <img class="img lazy" data-src="./css/img/6.JPG" alt="">
+                <img class="img lazy" data-src="./css/img/6.jpg" alt="">
             </div>
                 <figcaption class="gallery__item-desc">eclipse, Yagri Island, Winter 2017</figcaption>
         </div>
@@ -107,20 +107,38 @@ time unlinearly»
         </div>
         <div class="gallery__item">
             <div class="img-wrapper">
-                <img class="img lazy" data-src="./css/img/8.JPG" alt="">
+                <img class="img lazy" data-src="./css/img/8.jpg" alt="">
         </div>
                 <figcaption class="gallery__item-desc">eclipse, Yagri Island, Winter 2017</figcaption>
         </div>
         <div class="gallery__item">
             <div class="img-wrapper">
-                <img class="img lazy vertical" data-src="./css/img/9.JPG" alt="">
+                <img class="img lazy vertical" data-src="./css/img/9.jpg" alt="">
         </div>
                 <figcaption class="gallery__item-desc">eclipse, Yagri Island, Winter 2017</figcaption>
         </div>
         
     </div>
 </div>
-
+<script>
+(function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.getElementById('a').scrollLeft -= (delta*40); // Multiplied by 40
+        e.preventDefault();
+    }
+    if (document.getElementById('a').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('a').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('a').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('a').attachEvent("onmousewheel", scrollHorizontally);
+    }
+})();
+</script>
 <script src="./js/lazy.js"></script>
 <script src="./js/main.js"></script>
 </body>
