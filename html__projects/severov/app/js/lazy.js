@@ -13,6 +13,6 @@ console.log('priem')
     });
     $('.book__slider').slick({
         appendArrows: $('.controls'),
-        prevArrow: '<button type="button" class="ctrl-left"></button>',
-        nextArrow: '<button type="button" class="ctrl-right"></i></button>'
+        prevArrow: '<img class="ctrl-left" src="./css/img/arr.svg" alt="" srcset="">',
+        nextArrow: '<img class="ctrl-right" src="./css/img/arr.svg" alt="" srcset="">'
             });
